@@ -1,7 +1,5 @@
 ## README
 
-* bundle install
-* rails s
 
 Things you may want to cover on this doc:
 
