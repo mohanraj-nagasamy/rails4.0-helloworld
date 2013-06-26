@@ -1,2 +1,45 @@
 <h1>Rails4 <a href="https://github.com/mohanraj-nagasamy/rails4.0-helloworld">Source</a></h1>
-<p>Helloworld!</p>
+<p>Weather data</p>
+
+<table>
+  <thead><th>Day</th><th>Max T</th><th>Min T</th></thead>
+  <tbody>
+  <% @weather_list.each do |w| %>
+    <tr>
+      <td><%= w.day %></td>
+      <td><%= w.max_t %></td>
+      <td><%= w.min_t %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+
+<p> Soccer League Table (min diff team)</p>
+
+<table>
+  <thead><th>Team</th><th>Difference</th></thead>
+  <tbody>
+  <% Array(@foot_ball_min).each do |w| %>
+    <tr>
+      <td><%= w.name %></td>
+      <td><%= w.difference %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<p> Soccer League Table (sort by diff)</p>
+
+<table>
+  <thead><th>Team</th><th>Difference</th></thead>
+  <tbody>
+  <% Array(@foot_ball_list).each do |w| %>
+    <tr>
+      <td><%= w.name %></td>
+      <td><%= w.difference %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
